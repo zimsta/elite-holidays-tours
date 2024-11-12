@@ -1,0 +1,28 @@
+Java script
+
+// Array of destinations for searching
+const destinations = [
+    { name: "Table Mountain", description: "A world-famous mountain in Cape Town with stunning views of the city and ocean." },
+    { name: "Robben Island", description: "Historical island where Nelson Mandela was imprisoned. Accessible by boat tours." },
+    { name: "Garden Route", description: "A scenic drive through beaches, forests, and mountains. Great for hiking and nature lovers." }
+];
+
+// Event listener for the search button
+document.getElementById('searchButton').addEventListener('click', function() {
+    const query = document.getElementById('searchBar').value.toLowerCase();
+    const result = searchDestinations(query);
+
+    // Show the result in the search result paragraph
+    document.getElementById('searchResult').textContent = result;
+});
+
+// Search function
+function searchDestinations(query) {
+    const result = destinations.filter(destination => destination.name.toLowerCase().includes(query));
+    
+    if (result.length > 0) {
+        return result.map(d => `${d.name}: ${d.description}`).join('\n');
+    } else {
+        return "No results found.";
+    }
+}

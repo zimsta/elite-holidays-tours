@@ -1,0 +1,79 @@
+ Styling File
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Search Section Styling */
+#search {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#searchBar {
+    width: 60%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+#searchButton:hover {
+    background-color: #555;
+}
+
+/* Information Section Styling */
+#info {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.destination {
+    margin-bottom: 20px;
+}
+
+.destination h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.destination p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
